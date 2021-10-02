@@ -44,4 +44,24 @@ describe ('Fizzbuzz', function() {
     });
   });
 
+  describe('when playing, says', function() {
+      it('"Fizzbuzz" when a number is divisible by 15', function() {
+        expect(fizzbuzz.says(15)).toEqual("Fizzbuzz");
+      });
+    });
+
+  describe('when playing, says', function() {
+    it('"Fizz" when a number is divisible by 3', function() {
+      expect(fizzbuzz.says(3)).toEqual("Fizz");
+    });
+  });
+
+  describe('when playing, says', function() {
+    it('"Buzz" when a number is divisible by 5', function() {
+      expect(fizzbuzz.says(5)).toEqual("Buzz");
+    });
+  });
+
+  
+
 });

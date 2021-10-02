@@ -1,4 +1,5 @@
 class Fizzbuzz {
+  // private method only available within class
   _isDivisibleBy(number,divisor) {
     return (number % divisor === 0);
   }
@@ -13,6 +14,20 @@ class Fizzbuzz {
 
   isDivisibleByFifteen(number) {
     return this._isDivisibleBy(number, 15);
+  }
+
+  says(number) {
+    if(this.isDivisibleByFifteen(number)) {
+      return "Fizzbuzz";
+    }
+    if(this.isDivisibleByThree(number)) {
+      return "Fizz";
+    }
+    if(this.isDivisibleByFive(number)) {
+      return "Buzz";
+    }
+    
+    return number;
   }
 
 }
